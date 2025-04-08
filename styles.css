@@ -368,6 +368,7 @@ nav ul li:hover::after {
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  color: #000000;
 }
 .food {
   width: 100%;
@@ -1890,11 +1891,13 @@ footer {
   border-radius: 12px;
   color: #00000066;
   font-size: 14px;
+  outline: none;
 }
 
 .full-width {
   grid-column: 1 / -1;
   margin-top: 3rem;
+  
 }
 
 .submit-btn {
@@ -1926,15 +1929,18 @@ width: 100%;
   }
   .contact-form {
     width: 100%;
+    margin: 0;
+    padding: 2rem 0;
   }
   .form-grid {
-   width: 100%;
-   display: grid;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
   }
   .submit-btn{
     width: 100%;
   }
+  
 }
